@@ -115,7 +115,7 @@
                             </span>
                             <h4 class="text-section">MENU NAVIGATOR</h4>
                         </li>
-                        <li class="nav-item <?= $this->uri->segment(2) == '' ? 'active' : '' ?>">
+                        <li class="nav-item <?= $this->uri->segment(2) == '' || $this->uri->segment(2) == 'pengunjung_edit' ? 'active' : '' ?>">
                             <a href="<?= base_url() . 'dashboard' ?>">
                                 <i class="fas fa-tachometer-alt"></i>
                                 <p>Dashboard</p>

@@ -10,7 +10,7 @@
             </ul>
         </nav>
         <div class="copyright ml-auto">
-            2018, template with <i class="fa fa-heart heart text-danger"></i> by <a href="http://www.themekita.com">ThemeKita</a>
+            2018, template <b>Atlantis</b> with <i class="fa fa-heart heart text-danger"></i> by <a href="http://www.themekita.com">ThemeKita</a>
         </div>
     </div>
 </footer>
@@ -91,6 +91,13 @@
 
 <!-- Atlantis JS -->
 <script src="<?php echo base_url(); ?>/assets/js/atlantis.min.js"></script>
+<script>
+    window.setTimeout(function() {
+        $(".alert").fadeTo(300, 0).slideUp(300, function() {
+            $(this).remove();
+        });
+    }, 3000);
+</script>
 </body>
 
 </html>
